@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aneela Tabassum | Portfolio</title>
+    <!-- Premium Google Font Link -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Container Card -->
+    <div class="portfolio-container">
+        
+        <!-- Hero Section with Ultra Clear Heading -->
+        <div class="hero">
+            <h1 class="gradient-title">Hi there, I'm Aneela Tabassum 👋</h1>
+            <h3>🚀 Passionate Developer | Open Source Enthusiast | Problem Solver</h3>
+        </div>
+
+        <div class="separator"></div>
+
+        <!-- Tech Stack & Skills Section -->
+        <div class="skills-section">
+            <h2 class="section-title">🛠️ Tech Stack & Skills</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-category">
+                    <span class="category-name">Languages</span>
+                    <div class="badges-wrapper">
+                        <span class="tag-badge">HTML5</span>
+                        <span class="tag-badge">CSS3</span>
+                        <span class="tag-badge">JavaScript</span>
+                        <span class="tag-badge">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <span class="category-name">Frameworks</span>
+                    <div class="badges-wrapper">
+                        <span class="tag-badge">React.js</span>
+                        <span class="tag-badge">Bootstrap</span>
+                        <span class="tag-badge">Tailwind CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <span class="category-name">Tools & Platforms</span>
+                    <div class="badges-wrapper">
+                        <span class="tag-badge">Git</span>
+                        <span class="tag-badge">GitHub</span>
+                        <span class="tag-badge">VS Code</span>
+                        <span class="tag-badge">Netlify</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <!-- Interactive Call To Action Button -->
+        <div class="footer-action">
+            <button class="action-button" onclick="showPopupMessage()">Let's Connect ⭐</button>
+        </div>
+    </div>
+
+    <!-- Hidden Popup Notification Box -->
+    <div id="messagePopup" class="popup-notification">
+        <div class="popup-content">
+            <span>✨ Thank you for visiting! My portfolio is under construction. Let's create something amazing together! 🚀</span>
+        </div>
+    </div>
+
+    <!-- JavaScript Functionality For Display Message -->
+    <script>
+        function showPopupMessage() {
+            var popup = document.getElementById("messagePopup");
+            popup.classList.add("show");
+            
+            // Auto hide after 3.5 seconds
+            setTimeout(function() {
+                popup.classList.remove("show");
+            }, 3500);
+        }
+    </script>
+
+</body>
+</html>
